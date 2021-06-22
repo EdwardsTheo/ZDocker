@@ -1,4 +1,4 @@
-# List of useful kubernetes and minikube commands 
+# List of useful kubernetes commands 
 
 ## Cluster Management 
 
