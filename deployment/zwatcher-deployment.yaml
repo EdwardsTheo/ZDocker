@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zwatcher
+spec:
+  selector:
+    app: zwatcher
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 80
+    nodePort: 31555
+  type: NodePort
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zwatcher
+  labels:
+    app: zwatcher
+spec:
+  selector:
+    matchLabels:
+      app: zwatcher
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: zwatcher
+    spec:
+      containers:
+      - name: zwatcher
+        image: edwardstheo/zwatcher
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8081
+        resources: 
+                requests:
+                        cpu: 400m                        

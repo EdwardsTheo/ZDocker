@@ -2,4 +2,4 @@
 
 # connect to the zwatcher website
 
-minikube service zwatcher-service
+minikube service zwatcher
