@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     app: zwatcher
-    tier: frontend
   ports:
   - protocol: "TCP"
     port: 80
@@ -20,18 +19,15 @@ metadata:
   name: zwatcher-deployment
   labels:
     app: zwatcher
-    tier: frontend
 spec:
   selector:
     matchLabels:
       app: zwatcher
-      tier: frontend
   replicas: 1
   template:
     metadata:
       labels:
         app: zwatcher
-        tier: frontend
     spec:
       containers:
       - name: zwatcher

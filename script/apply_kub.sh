@@ -2,4 +2,4 @@
 
 # Apply all .yaml file to build the app
 
-kubectl apply -f Deployment
+kubectl apply -f deployment

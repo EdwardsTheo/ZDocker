@@ -15,7 +15,7 @@ echo -e "
 echo "" 
 echo ""
 
-echo "Welcome on the ZBateau !" 
+echo "Welcome on the ZBoat !" 
 echo "" 
 echo ""
 
@@ -54,7 +54,7 @@ shutdown() {
 }
 
 quit() {
-	echo "Vous quittez le navire !"
+	echo "You left the ZBoat !"
 
 }
 

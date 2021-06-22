@@ -2,7 +2,7 @@
 
 # Delete all kube yaml file 
 
-kubectl delete -f Deployment
+kubectl delete -f deployment
 
 # Delete all pods 
 
