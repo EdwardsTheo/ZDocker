@@ -87,3 +87,16 @@ kubectl get services
 ```
 kubectl describe services 
 ```
+
+
+## HPA
+
+### List one or more hpa
+```
+kubectl get hpa
+```
+
+### Display the detailed state of an hpa 
+```
+kubectl describe hpa
+```
