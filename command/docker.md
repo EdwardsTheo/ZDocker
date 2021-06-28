@@ -18,7 +18,7 @@ docker pull <image_name>
 
 ### Start a container
 ```
-docker start >container_name>
+docker start <container_name>
 ```
 
 ### Stop a container
